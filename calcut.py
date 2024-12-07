@@ -12,8 +12,6 @@ class Calculator:
     
     def minus(self, multiple_negative: bool = False) -> int:
 
-        if multiple_negative:
-            return (self.number1 - self.number2) * -1
-        
-        else:
-            return self.number1 - self.number2
+        target = self.number1 - self.number2
+
+        return target * -1 if multiple_negative else target
